@@ -58,3 +58,26 @@ function createGateway(services, rateLimiter) {
     }
   };
 }
+
+
+///// create server + wire everything
+
+const http = require("http");
+
+// create limiter: 5 requests per 10 sec
+const rateLimiter = createRateLimiter(5, 10000);
+
+// register services
+const services = {
+  "/users": userService,
+  "/products": productService
+};
+
+// create gateway
+const gateway = createGateway(services, rateLimiter);
+
+// start server
+http.createServer(gateway).listen(3000, () => {
+  console.log("API Gateway running on port 3000");
+});
+
