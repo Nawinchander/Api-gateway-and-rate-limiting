@@ -18,3 +18,8 @@ function createLimiter(limit, windowMs) {
     return store[ip].count <= limit;
   };
 }
+
+function validateApiKey(req) {
+  const key = req.headers["x-api-key"];
+  return key === "SECRET123";
+}
