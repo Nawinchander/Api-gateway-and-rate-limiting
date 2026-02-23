@@ -1,0 +1,5 @@
+Nice — I’ll give you 3 more Node.js examples of
+API Gateway
+Rate limiting
+Function-based (no classes)
+Slightly more real-world patterns
