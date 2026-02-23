@@ -10,3 +10,7 @@ function gateway(req, res) {
     res.end("Service not found");
   }
 }
+
+http.createServer(gateway).listen(3002, () => {
+  console.log("Gateway on 3002");
+});
