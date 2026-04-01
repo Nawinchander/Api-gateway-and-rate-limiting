@@ -1,0 +1,7 @@
+API Gateway with Middleware + Rate Limiting
+
+Concept
+Gateway = single entry point
+Apply auth + rate limit + routing
+
+
