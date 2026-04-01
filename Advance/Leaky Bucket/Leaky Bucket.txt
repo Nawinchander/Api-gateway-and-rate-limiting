@@ -1,0 +1,6 @@
+Leaky Bucket (Queue-Based Smoothing)
+
+Concept
+Requests enter queue
+Processed at fixed rate
+
