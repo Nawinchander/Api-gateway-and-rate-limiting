@@ -1,7 +1,38 @@
-Nice — I’ll give you 3 more Node.js examples of
-API Gateway
-Rate limiting
-Function-based (no classes)
-Slightly more real-world patterns
+FAANG-Level Interview Tips
 
+What Interviewers Expect
+
+Start with:
+Functional requirements
+Non-functional (latency, scale)
+
+Say numbers:
+"1M requests/sec"
+"100ms latency"
+
+Choose strategy:
+Token Bucket → burst-friendly
+Sliding Window → accurate
+Redis → distributed
+
+Basics
+What is API Gateway?
+Difference between Rate Limiting & Throttling?
+🔹 Deep Dive
+How would you design rate limiter for 1B users?
+How to avoid race conditions in distributed limiter?
+How to handle clock skew?
+🔹 System Design
+Design API Gateway for Google
+Design rate limiter for Twitter
+
+
+Pro-Level Points (Say This in Interview)
+Use consistent hashing for sharding
+Use Redis + Lua scripts for atomic ops
+Add circuit breaker at gateway
+Use CDN + caching before rate limiting
+Handle:
+Retry storms
+DDoS attacks
 
