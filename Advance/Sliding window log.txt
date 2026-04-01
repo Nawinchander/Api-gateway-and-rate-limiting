@@ -1,0 +1,4 @@
+Concept
+Store timestamps of requests
+Remove old ones beyond window
+
