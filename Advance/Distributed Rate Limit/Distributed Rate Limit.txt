@@ -1,0 +1,5 @@
+Concept
+Multiple servers share state
+Use Redis atomic ops
+
+
