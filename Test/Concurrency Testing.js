@@ -27,5 +27,21 @@ testRace();
 /// fix atomic - like - logic
 
 
+const mutex = require("async-mutex").Mutex;
+const lock = new mutex();
+
+async function safeRequest() {
+  await lock.runExclusive(async () => {
+    counter++;
+  });
+}
+
+// FAANG Insight
+
+// Interviewers LOVE this:
+
+// “What happens in concurrent requests?”
+// Shows distributed systems thinking
+
 
 
