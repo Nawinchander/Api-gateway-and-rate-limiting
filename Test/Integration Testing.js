@@ -23,4 +23,14 @@ app.get("/api", (req, res) => {
 app.listen(3000);
 
 
+// Test (Manual / Script)
+// curl http://localhost:3000/api
+
+// After 3 requests → 429 Too Many Requests
+
+// FAANG Insight
+// Can you integrate components?
+// Do you understand middleware pipelines?
+
+
 
