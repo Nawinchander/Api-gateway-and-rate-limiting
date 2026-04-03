@@ -23,6 +23,12 @@ async function loadTest() {
 
 loadTest();
 
+/// expected op - ["OK", "OK", "OK", 429, 429, 429, ...]
+
+// FAANG Insight - This shows:
+
+// Burst traffic handling
+// Throttling effectiveness
 
 
 
