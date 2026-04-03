@@ -4,7 +4,37 @@ What you're testing
 Correct token refill
 Reject when limit exceeded
 
+Interview Questions You Should Answer
 
+Be ready for:
+
+API Gateway
+How do you test routing correctness?
+How do you simulate downstream failure?
+
+Rate Limiting
+Token bucket vs leaky bucket?
+How to handle distributed limits?
+How to avoid race conditions?
+
+How to Explain in Interview (Golden Answer)
+
+Structure your answer like this:
+
+"I test API Gateway and rate limiting in layers:
+
+Unit testing for algorithm correctness
+Integration testing with middleware
+Load testing for traffic spikes
+Concurrency testing for race conditions
+Distributed testing using Redis"
+If you want next level
+
+I can show you:
+
+FAANG-level API Gateway system design (with diagrams)
+Sliding Window + Leaky Bucket implementations
+Kubernetes + NGINX rate limiting real-world setup
 
 
 
