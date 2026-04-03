@@ -28,4 +28,25 @@ async function rateLimit(userId) {
 }
 
 
+//// Test
+(async () => {
+  for (let i = 0; i < 7; i++) {
+    console.log(await rateLimit("user1"));
+  }
+})();
+
+/// OP - true true true true true false false
+
+
+// FAANG Insight
+
+// Key discussion points:
+
+// Why Redis? (atomic ops)
+// What about distributed nodes?
+// What about clock drift?
+
+
+
+
 
